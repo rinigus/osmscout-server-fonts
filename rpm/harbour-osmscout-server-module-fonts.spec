@@ -13,8 +13,12 @@ URL:        https://github.com/rinigus/osmscout-server
 Source0:    %{name}-%{version}.tar.bz2
 BuildArch:  noarch
 
-BuildRequires: pkgconfig(sailfishapp)
-Requires: sailfishsilica-qt5
+BuildRequires:  pkgconfig(sailfishapp) >= 1.0.2
+BuildRequires:  pkgconfig(Qt5Core)
+BuildRequires:  pkgconfig(Qt5Qml)
+BuildRequires:  pkgconfig(Qt5Quick)
+BuildRequires:  desktop-file-utils
+Requires: sailfishsilica-qt5 >= 0.10.9
 Requires: libsailfishapp-launcher
 
 %description
@@ -26,7 +30,7 @@ rendering backend
 
 %build
 
-%qtc_qmake5 SPECVERSION=%{version}
+%qtc_qmake5 SPECVERSION='%{version}'
 
 %qtc_make %{?_smp_mflags}
 
