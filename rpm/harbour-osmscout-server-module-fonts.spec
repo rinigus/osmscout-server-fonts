@@ -8,7 +8,7 @@ Summary:    OSM Scout Server Module: Fonts
 Version:    0.10.0
 Release:    1
 Group:      Qt/Qt
-License:    MIT
+License:    LGPL3
 URL:        https://github.com/rinigus/osmscout-server
 Source0:    %{name}-%{version}.tar.bz2
 BuildArch:  noarch
