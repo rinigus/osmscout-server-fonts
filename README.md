@@ -1,2 +1,3 @@
-# osmscout-server-fonts
-OSM Scout Server Module: Fonts
+# OSM Scout Server Module: Fonts
+
+This is a repository containing OSM Scout Server Module: Fonts.
