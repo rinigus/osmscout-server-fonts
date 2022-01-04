@@ -9,7 +9,7 @@ Version:    0.10.0
 Release:    1
 Group:      Qt/Qt
 License:    LGPL3
-URL:        https://github.com/rinigus/osmscout-server
+URL:        https://github.com/rinigus/osmscout-server-fonts
 Source0:    %{name}-%{version}.tar.bz2
 BuildArch:  noarch
 
@@ -24,6 +24,12 @@ Requires: libsailfishapp-launcher
 %description
 This a module for OSM Scout Server providing fonts for Mapnik
 rendering backend
+
+PackageName: OSM Scout Server Fonts
+Type: addon
+Category:
+  - Font
+  - Other
 
 %prep
 %setup -q -n %{name}-%{version}
